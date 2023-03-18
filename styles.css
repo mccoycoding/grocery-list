@@ -69,11 +69,14 @@ body{
 }
 .list-header{
     margin: auto;
-    width: 90%;
-    height: 15%;
+    margin-top: 20px;
+    width: 45%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(172, 233, 223);
+    border-radius: 20px;
 }
 .list-heading{
     font-size: 20px;
@@ -93,7 +96,7 @@ h1{
 }
 h2{
     font-size: 35px;
-    background-color: #ffffff;
+    background-color: #b6f4ed;
     width: 15%;
     height: 30%;
     border-radius: 20px;
