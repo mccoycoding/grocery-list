@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        li{
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 10px 40px 0px;
+        }
+        button{
+            width: 30px;
+            height: 30px;
+            justify-self: center;
+            align-items: center;
+            border-radius: 10px;
+            border: 1px black solid;
+            transition: background-color 0.2s;
+        }
+        button:hover{
+            background-color: lightgray;
+        }
+        button:active{
+            background-color: gray;
+        }
+        .plus-or-minus{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100px;
+        }
+        .total{
+            border: 1px solid gray;
+            width: 10%;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .item{
+            width: 50%;
+            font-size: 100%;
+        }
+    </style>
+    <script defer>
+        let plusButton = document.getElementsByTagName("data-plus");
+        let minusButton = document.getElementsByTagName("data-minus");
+        let total = document.getElementsByTagName('data-total');
+    </script>
+    <title>Grocery Shopping List</title>
+</head>
+<body>
+    <main>
+        <h1>Shopping Lists</h1>
+        <section class="section-container">
+            <div class="section-header">
+                <img style="width: 15%; padding: 20ox 20px 0 20px; margin: 0;" src="banner2.jpg" alt="grocery banner">
+                <h2>Pantry</h2>
+            </div>
+            <section class="lists-container">
+                <div class="container">
+                    <div class="list-header">
+                        <h3 class="list-heading">Fry's</h3>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">  
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                         
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done"> 
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">  
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="list-header">
+                        <h3 class="list-heading">Walmart</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done"> 
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section-container">
+            <div class="section-header">
+                <img style="width: 15%; padding: 20ox 20px 0 20px; margin: 0;" src="banner.jpg" alt="grocery banner">
+                <h2>Freezer</h2>
+            </div>
+            <section class="lists-container">
+                <div class="container">
+                    <div class="list-header">
+                        <h3 class="list-heading">Costco</h3>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="list-header">
+                        <h3 class="list-heading">Sam's Club</h3>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">  
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done"> 
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">  
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done"> 
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                            <li>
+                                <input class="item" placeholder="Type Item" />
+                                <input type="number" class="total" placeholder="0">
+                                <input type="checkbox" name="" class="done">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
